@@ -1,0 +1,89 @@
+<div class="intoro">
+            <h5>診断結果</h5>
+            <p>あなたにおすすめの香りは…</p>
+        </div>
+        <div class="tweet-container">
+            <div class="tweet">
+                <% if @perfume.question == "1111" %>
+                <h6>レモン</h6>
+                <p>柑橘系の代表的な原料</p>
+                <p>清涼感があり、爽やかな印象</p>
+
+                <% elsif @perfume.question == "1112" %>
+                <h6>シトラス</h6>
+                <p>オレンジに似た柑橘系の果物</p>
+                <p>リラックス効果がある</p>
+
+                <% elsif @perfume.question == "1121" %>
+                <h6>ローズ</h6>
+                <p>華やかで上品な香り</p>
+                <p>ストレスを緩和してくれる効果がある</p>
+
+                <% elsif @perfume.question == "1122" %>
+                <h6>ラベンダー</h6>
+                <p>優しく女性らしい香り</p>
+                <p>気持ちを落ち着かせてくれる</p>
+
+                <% elsif @perfume.question == "1211" %>
+                <h6>ジャスミン</h6>
+                <p>爽やかなのに官能的な香り</p>
+                <p>幸福感を得やすい</p>
+                <% elsif @perfume.question == "1212" %>
+                <h6>ピーチ</h6>
+                <p>フレッシュで優しい香り</p>
+                <p>アンチエイジングにも最適</p>
+
+                <% elsif @perfume.question == "1221" %>
+                <h6>アップル</h6>
+                <p>特徴的で甘い香り</p>
+                <p>万人受けしやすい</p>
+
+                <% elsif @perfume.question == "1222" %>
+                <h6>ユーカリ</h6>
+                <p>しっかりとした優しい香り</p>
+                <p>浄化作用があり。気持ちを落ち着かせてくれる</p>
+
+                <% elsif @perfume.question == "2111" %>
+                <h6>ローズマリー</h6>
+                <p>きりりとした強めの香りが特徴的</p>
+                <p>美容効果が高い</p>
+
+                <% elsif @perfume.question == "2112" %>
+                <h6>ベルガモット</h6>
+                <p>柑橘系の果実</p>
+                <p>甘くてフレッシュな、万能な香料</p>
+
+                <% elsif @perfume.question == "2121" %>
+                <h6>ムスク</h6>
+                <p>雄のジャコウジカの腹部にある香嚢から抽出した香料</p>
+                <p>官能的で重い香り</p>
+
+                <% elsif @perfume.question == "2122" %>
+                <h6>アンバー</h6>
+                <p>マッコウクジラの結石から抽出した香料</p>
+                <p>魅惑的で色気のある香り</p>
+                <% elsif @perfume.question == "2211" %>
+                <h6>シナモン</h6>
+                <p>甘いスパイスの香り</p>
+                <p>香水のアクセントとしてよく使われる</p>
+
+                <% elsif @perfume.question == "2212" %>
+                <h6>バニラ</h6>
+                <p>甘くて官能的な香り</p>
+                <p>上品で年齢を問わず人気が高い</p>
+
+                <% elsif @perfume.question == "2221" %>
+                <h6>イランイラン</h6>
+                <p>色気のある濃厚で甘い香り</p>
+                <p>恋愛に効果があり</p>
+
+                <% elsif @perfume.question == "2222" %>
+                <h6>サンダルウッド</h6>
+                <p>お香としてよく使われる白檀の香り</p>
+                <p>集中力を高める効果もあり</p>
+
+                <% end %>
+
+        </div>
+
+        <%= link_to "飲食店一覧に戻る", tweets_path %>

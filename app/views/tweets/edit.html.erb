@@ -1,0 +1,7 @@
+<%= form_for @tweet do |f| %>
+    <%= f.label :body %>
+    <%= f.text_field :spot, :size => 140 %> 
+    <%= f.text_field :about, :size => 140 %> 
+    <%= f.text_field :spot2, :size => 140 %> 
+    <%= f.submit "編集する" %>
+  <% end %>

@@ -1,0 +1,293 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+body{
+    height: 80%;
+}
+.a1{
+   position: absolute;
+   top: -650px;
+   left: 30px;
+   bottom: 0;
+   margin: auto 0;
+}
+
+.a3{
+    position: absolute;
+    top: -650px;
+    left: 234px;
+    bottom: 0;
+    margin: auto 0;
+}
+.a2{
+   position: absolute;
+   top: -340px;
+   left: 30px;
+   bottom: 0;
+   margin: auto 0;
+ 
+}
+
+.a4{
+    position: absolute;
+    top: -340px;
+    left: 234px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a5{
+    position: absolute;
+    top: -495px;
+    left: 438px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a6{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a7{
+    position: absolute;
+    top: -34px;
+    left: 438px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a8{
+    position: absolute;
+    top: -34px;
+    left: 641px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a9{
+    position: absolute;
+    top: 275px;
+    left: 438px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.a10{
+    position: absolute;
+    top: 275px;
+    left: 641px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.spottext{
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 40px;
+    position: absolute;
+    top: 70px;
+    left: 1020px;
+
+}
+
+.spottext2{
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 15px;
+    position: absolute;
+    top: 170px;
+    left: 900px;
+
+}
+
+
+
+
+/* ボタンのスタイル */
+.buttonOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 180px;
+  height: 44px;
+  padding: 8px 24px;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #FFDEAD;
+  border: 2px solid black;
+  position: absolute;
+    top: 420px;
+    left: 930px;
+
+}
+
+@media (any-hover: hover) {
+  .buttonOutline {
+    transition: background-color 0.2s;
+  }
+
+  .buttonOutline:hover {
+    background-color:#FFAD90;
+  }
+}
+
+.buttonOutline2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 180px;
+    height: 44px;
+    padding: 8px 24px;
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #FFDEAD;
+    border: 2px solid black;
+    position: absolute;
+      top: 420px;
+      left: 1200px;
+  }
+
+  @media (any-hover: hover) {
+    .buttonOutline2 {
+      transition: background-color 0.2s;
+    }
+  
+    .buttonOutline2:hover {
+      background-color:#FFAD90;
+    }
+  }
+
+.access{
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    position: absolute;
+    top: 500px;
+    left: 930px;
+}
+
+.phone{
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    position: absolute;
+    top: 540px;
+    left: 930px;
+ }
+
+
+ .buttonOutline3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+    height: 44px;
+    padding: 8px 24px;
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #FFDAB9;
+    border: 2px solid black;
+    position: absolute;
+      top: 580px;
+      left: 930px;
+  }
+
+  @media (any-hover: hover) {
+    .buttonOutline3 {
+      transition: background-color 0.2s;
+    }
+  
+    .buttonOutline3:hover {
+      background-color:#FFAD90;
+    }
+  }
+
+  .text {
+    margin : 0 auto 40px;
+    width : 100%;
+    font-size : 24px;
+    text-align : center;
+    overflow : hidden;
+    position: absolute;
+    top: 800px;
+    }
+    .text ul{
+    margin:0;
+    display : inline-block;
+    padding-right: 100%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollSample02 20s linear infinite;
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 40px;
+    }
+
+    .text ul li{
+    display:inline;
+    margin:0 30px 0 0;
+    font-weight: 500 !important;
+    }
+    
+    @keyframes text{
+    100% { transform: translateX(0)}
+    0% { transform: translateX(-100%)}
+    }
+
+
+  .sample02 {
+    margin : 0 auto 40px;
+    width : 100%;
+    font-size : 24px;
+    text-align : center;
+    overflow : hidden;
+    position: absolute;
+    top: 700px;
+    }
+    .sample02 ul{
+    margin:0;
+    display : inline-block;
+    padding-right: 100%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollSample02 75s linear infinite;
+    font-family: Georgia;
+    font-family:"Sawarabi Mincho", serif;
+    font-size: 70px;
+    }
+    .sample02 ul li{
+    display:inline;
+    margin:0 50px 0 0;
+    font-weight: 800 !important;
+    }
+    
+    @keyframes scrollSample02{
+    0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+    }
+
+    
+
+  

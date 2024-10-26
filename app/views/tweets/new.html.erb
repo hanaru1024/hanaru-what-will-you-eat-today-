@@ -1,0 +1,104 @@
+<h1>おすすめ飲食店の紹介</h1>
+<h3>新規投稿ページ</h3>
+<%= form_for @tweet do |f| %>
+
+  <div class='form-group'>
+  <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+      <div class='form-check'>
+          <%= tag.label class: 'form-check-label' do %>
+              <%= tag.check_box class: 'form-check-input' %>
+              <%= tag.text %>
+          <% end %>
+      </div>
+  <% end %>
+</div>
+
+  <div class="field">
+    <%= f.label :タイトル %>
+    <%= f.text_field :title, :size => 30 %>
+  </div>
+  
+    <div class="field">
+    <%= f.label :飲食店名 %>
+    <%= f.text_field :spot, :size => 30 %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+  <%= f.label :一言  %>
+  <%= f.text_area :about, :size => "30x2" %>
+</div>
+
+<div class="field">
+<%= f.label :詳細 %>
+<%= f.text_field :spot2, :size => 30 %>
+</div>
+
+<div class="field">
+<%= f.label :周辺おすすめスポット %>
+<%= f.text_field :spot3, :size => 30 %>
+</div>
+
+<h2>gmap</h2>
+
+<input id="address" type="textbox" value="GeekSalon">
+<input type="button" value="Encode" onclick="codeAddress()">
+<div id="display">何かが表示される、、、、！</div>
+
+<div id='map'></div>
+
+<style>
+#map {
+  height: 600px;
+  width: 600px;
+}
+</style>
+
+<script>
+let map
+const display = document.getElementById('display')
+function initMap(){
+  geocoder = new google.maps.Geocoder()
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 40.7828, lng:-73.9653},
+    zoom: 12,
+  });
+
+  marker = new google.maps.Marker({
+    position:  {lat: 40.7828, lng:-73.9653},
+    map: map
+  });
+}
+
+let geocoder
+
+function codeAddress(){
+  let inputAddress = document.getElementById('address').value;
+
+  geocoder.geocode( { 'address': inputAddress}, function(results, status) {
+    if (status == 'OK') {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+      display.textContent = "検索結果：" + results[ 0 ].geometry.location
+    } else {
+      alert('該当する結果がありませんでした：' + status);
+    }
+  });   
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4uKsqry7TzUAhDrxBWt3L46mBcgsHjIw&callback=initMap" async defer></script>
+
+<%= f.submit "飲食店を投稿する" %>
+<% end %>
+
+<%= link_to "飲食店一覧に戻る", tweets_path %>

@@ -1,0 +1,384 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url(https://fonts.google.com/specimen/Sawarabi+Mincho?subset=japanese&noto.script=Hira);
+
+
+.mattarinnaisiteru{
+  background-color: FFFFF0;
+  top: 4000px;
+}
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.img {
+    width:500%;/*スライダー内の画像を横幅100%に*/
+    height:1000px;
+    top: 200px;
+}
+
+.img .mattarin{
+  width:500%;/*スライダー内の画像を横幅100%に*/
+    height:1000px;
+}
+
+.slider{
+  top: 10px ;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.slider2{
+  top: 350px ;
+  width: 100%;
+}
+
+
+
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+
+h2,p {
+    text-align:center;
+   
+}
+
+ul{
+  height: 260px;
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #333;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+.what{
+position: relative;
+font-family: Georgia;
+font-size: 35px;
+top: 36px;
+}
+
+.today{
+position: relative;
+font-family:"Sawarabi Mincho", serif;
+font-size: 30px;
+top: 4px;
+}
+
+
+
+
+  
+
+
+
+
+
+/*========= 枠のためのCSS ===============*/
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    padding: 30px;
+    margin-top: 500px;
+    margin: 5px;
+    font-weight: normal;
+    border: 2px solid black;
+    
+}
+
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p, .box6 p {
+    margin: 0; 
+    padding: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top:380px;
+}
+
+.box1{
+   width: 450px;
+   height:  500px;
+   margin-left: -200px;
+   
+}
+
+.moji1{
+  font-family:"Sawarabi Mincho", serif;
+  font-size: larger;
+   position:absolute;
+   top: 1280;
+   left: 80 ;
+}
+
+.situation{
+  font-family: Georgia;
+   font-size: 50px;
+   position:absolute;
+   top: 1220;
+   left: 105;
+
+}
+
+.box23{
+  width: 550px;
+  height: 100px;
+}
+
+.box2{
+  height: 300px;
+}
+
+.location{
+  font-family: Georgia;
+   font-size: 50px;
+   position:absolute;
+   top: 1430px;
+   left: 500px;
+}
+
+.moji2{
+  font-family:"Sawarabi Mincho", serif;
+  position:absolute;
+  top: 1455px;
+  left: 820px;
+}
+
+.box3{
+  height: 250px;
+}
+
+.ranking{
+  font-family: Georgia;
+   font-size: 50px;
+   position:absolute;
+   top:1590px;
+   left:760px ;
+}
+
+.moji3{
+  font-family:"Sawarabi Mincho", serif;
+   position:absolute;
+   top: 1660px;
+   left: 765px;
+}
+
+.box4{
+  height: 555px;
+  width: 450px;
+  margin-right: -200px;
+}
+
+.moji4{
+  font-family:"Sawarabi Mincho", serif;
+   writing-mode: vertical-rl;
+   margin-top: 15px;
+   margin-left: 375px;
+}
+
+.member{
+  font-family: Georgia;
+   font-size: 50px;
+   position:absolute;
+   top:1680px;
+   left:1180px ;
+}
+
+.box56{
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.box5{
+  height: 300px;
+  width: 450px;
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+.diagnosis{
+  font-family: Georgia;
+   font-size: 50px;
+   position:absolute;
+   top:1720px;
+   left:260px ;
+}
+
+.moji5{
+   font-family:"Sawarabi Mincho", serif;
+   position:absolute;
+   top: 1785px;
+   left: 273px;
+}
+
+.box6{
+  height: 246px;
+  margin-right: -900px;
+  width: 1000px;
+}
+
+.restaurantlist{
+  font-family: Georgia;
+    font-size: 50px;
+   position:absolute;
+   top:1855px;
+   left:500px ;
+}
+
+.moji6{
+  font-family:"Sawarabi Mincho", serif;
+  position:absolute;
+  top: 1930px;
+  left: 600px;
+}
+
+.example1{
+  position: absolute;
+  top: 1310;
+  bottom: 0;
+  left: 95;
+  right: 0;
+  width: 12%;
+  height: 40%;
+  
+}
+.image_link{
+  display:block; 
+  position:relative;
+  text-decoration:none;
+  overflow:hidden;
+ }
+ .image_link:before{
+   content:"";
+   display:block;
+   padding-top: 206.25%;/*ここには横幅に対して縦が何%になるかを記述*/
+ }
+ .image_link img{
+   position:absolute;
+   top:100;
+   bottom:0;
+   left:50;
+   right:0;
+   transition:0.3s;
+   display:block;
+   width:85%;
+ }
+ .image_link:hover img{
+   transform:scale(1.1);
+ }
+
+
+.example2{
+  position: absolute;
+  top: 1220;
+  bottom: 0;
+  left: 523;
+  right: 0;
+  width: 30%;
+  height: 22%;
+  
+}
+
+.example3{
+  position: absolute;
+  top: 1503;
+  bottom: 0;
+  left: 510;
+  right: 0;
+  width: 14%;
+  height: 28%;
+  
+}
+.example4{
+  position: absolute;
+  top: 1240;
+  bottom: 0;
+  left: 1075;
+  right: 0;
+  width: 22%;
+  height: 50%;
+  
+}
+.example5{
+  position: absolute;
+  top: 1730;
+  bottom: 0;
+  left: 28;
+  right: 0;
+  width: 16%;
+  height: 30%;
+  
+}
+.example6{
+  position: absolute;
+  top: 1770;
+  bottom: 0;
+  left: 920;
+  right: 0;
+  width: 35%;
+  height: 25%;
+  
+}
+
+.example7{
+  position: absolute;
+  top: 1780;
+  bottom: 0;
+  left: 1300;
+  right: 0;
+  width: 11%;
+  height: 25%;
+  
+}
+
+
+.image_link2{
+  display:block; 
+  position:relative;
+  text-decoration:none;
+  overflow:hidden;
+ }
+ .image_link2:before{
+   content:"";
+   display:block;
+   padding-top: 156.25%;/*ここには横幅に対して縦が何%になるかを記述*/
+ }
+ .image_link2 img{
+   position:absolute;
+   top:10;
+   bottom:0;
+   left:50;
+   right:0;
+   transition:0.3s;
+   display:block;
+   width:85%;
+   height: 25%;
+  
+ }
+ .image_link2:hover img{
+   transform:scale(1.1);
+ }
+
+
+ 

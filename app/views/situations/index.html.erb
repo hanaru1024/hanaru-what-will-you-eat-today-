@@ -1,0 +1,60 @@
+
+  <div class="box">
+    <%= image_tag 'situation table.jpg', class:"example" %>
+    <p class="bottom-left">By Situation</p>
+  </div>
+
+  <div class="bubble08" >Pick up!!</div>
+ 
+
+  <div class="toppicture">
+    <%= image_tag 'オーバカナル.webp',  size:"620×620",class:"topexample1" %>
+    <%= image_tag 'オーバカナル料理.png', size:"600×600",class:"topexample2" %>
+  </div>
+
+  <p class="topfont1">【 紀尾井町 , 高輪 , 銀座 , 東山 】</p>
+  <p class="topfont2"> AUX BACCHANALES </p>
+  <p class="topfont3"> 本場の賑わいと味わいが息づく空間の中で、“フランスの大衆食文化を伝える” </p>
+
+
+aa
+<div class="toukou">
+
+   <% @tweets.each do |t| %>
+
+     <div class="tweet">
+
+       <div class="box_s3">
+         <%= t.title %>
+       </div>
+
+       <div class=imgimg>
+         <%= link_to  tweet_path(t.id) do %>
+          <%= image_tag t.image_url, size: "440x310" if t.image? %>
+         <% end %>
+       </div>
+
+       <div class="tweettext1">
+          <%= t.spot %>
+        </div>
+
+        <div class="tweettext2">
+          <%= t.about %>
+        </div>
+
+     </div>
+   <% end %>
+
+</div>
+
+ <div class=girlstalk>
+   －気の置ける仲間と女子会を－
+  </div>
+
+  <div class=date>
+   －デートの最後に美味しい料理を－
+  </div>
+
+  <div class=firstmeeting>
+   －初対面の人と落ち着いた雰囲気で－
+  </div>

@@ -1,0 +1,124 @@
+
+<div class="mattarinnaisiteru">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<div class=aaa>
+<%= image_tag 'ロゴ仮3.gif', size:"120×120" %>
+</div>
+
+
+
+<title>6-1-8 複数画像を流して見せる</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/css/6-1-8.css">
+
+</head>
+
+<body>
+
+
+ <ul class="slider">
+  <li><img src="/assets/スライド用画像８.jpg" alt=""></li>
+  <li><img src="/assets/スライド用画像１.jpg" alt=""></li>
+  <li><img src="/assets/スライド用画像６.jpg" alt=""></li>
+  <li><img src="/assets/スライド用画像２.jpg" alt=""></li>
+  <li><img src="/assets/投稿用　どらセブン.jpg" alt=""></li>
+  <li><img src="/assets/投稿用画像１１.jpg" alt=""></li>
+ <!--/slider--></ul>
+ 
+<p class="what">What will you eat today? </p>
+<p class="today">今日何食べる？</p>
+
+
+<div class="slider2">
+<ul class="slider">
+    <li><img src="/assets/スライド用画像４.jpg" alt=""></li>
+    <li><img src="/assets/スライド用画像３.jpg" alt=""></li>
+    <li><img src="/assets/投稿用オーバカナル.jpg" alt=""></li>
+    <li><img src="/assets/スライド用画像１０.png" alt=""></li>
+    <li><img src="/assets/スライド用画像１３.jpg" alt=""></li>
+    <li><img src="/assets/スライド用画像９.png" alt=""></li>
+  <!--/slider--></ul>
+</div>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/js/6-1-8.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<div class="container">
+    <div class="box1">
+        <p class=situation>By Situation</p>
+           <div class="moji1">
+            <font size="2" >「デート」や「女子会」などシチュエーション別に紹介</font>
+           </div>
+
+           <a href="http://localhost:3000/situations/index">
+           <a href="http://localhost:3000/situations/index" class="image_link"><%= image_tag 'situationimg4.png', class:"example1" %></a>
+           </a>
+    </div>
+
+    <div class="box23">
+        <div class="box2">
+        <a href="#" class="image_link2"><%= image_tag 'location.png', class:"example2" %></a>
+           <p class="location">By Location</p>
+               <div class="moji2">
+               <font size="2">行き先が決まっているなら…</font>
+               </div>
+        </div>
+    
+        <div class="box3">
+            <p class=ranking>Diagnosis</p>
+                <div class="moji3">
+                <font size="2">気分に合った飲食店を診断で知ろう！</font>
+               </div>
+               <a href="#" class="image_link3"><%= image_tag '診断.png', class:"example3" %></a>
+        </div>
+    </div>
+
+        <div class="box4">
+              <div class="moji4">
+              <font size="2">友達や上司、気になる異性とどこに行く？</font>
+              </div>
+           <p class=member>By Member</p>
+           <a href="#" class="image_link4"><%= image_tag 'member4.png', class:"example4" %></a>
+        </div> 
+ </div>
+
+ <div class="box56">
+  <div class="box5">
+    <p class=diagnosis>Ranking</p>
+        <div class="moji5">
+        <font size="2"> 人気飲食店が一目でわかる！</font>
+        </div>
+        <a href="#" class="image_link5"><%= image_tag 'ranking.png', class:"example5" %></a>
+  </div>
+
+  <div class="box6">
+    <p class=restaurantlist>Restaurant List</p>
+        <div class="moji6">
+       <font size="2">飲食店一覧から探す</font>
+       </div>
+       <a href="#" class="image_link6"><%= image_tag 'list3.png', class:"example6" %></a>
+    
+  </div>
+ </div>
+ 
+
+</div>
+

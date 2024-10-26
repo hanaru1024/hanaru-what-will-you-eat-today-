@@ -1,0 +1,188 @@
+// Place all the styles related to the situations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.example{
+   display: flex;
+   height: 100%;
+   width: 100%;
+}
+
+.box{
+   position: relative;
+ }
+ .bottom-left {
+   position: absolute;
+   bottom: 30px;
+   left: 25px;
+   font-family: Georgia;
+   font-size: 100px;
+   color: white;
+ }
+
+ 
+
+.bubble08 {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 63px; 
+  padding: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  
+ 
+  background-color: transparent;
+  border: #000 solid 4px;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+  font-size: 30px;
+  top: 930px;
+  left: 1100px;
+}
+.bubble08:before {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-style: solid;
+  border-color: #FFF transparent;
+  border-width: 25px 25px 0 0;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -10px;
+}
+.bubble08:after
+{
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 0;
+  border-style: solid;
+  border-color: #000 transparent;
+  border-width: 25px 25px 0 0;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+
+
+
+ .toppicture{
+   position: absolute;
+   top: 1020px;
+   left: 240px;
+   display: flex;
+ }
+
+ .topfont1{
+   position: absolute;
+   font-size: 16px;
+   top: 1470px;
+   left: 235px;
+   font-family: Georgia;
+   font-family:"Sawarabi Mincho", serif;
+ }
+ .topfont2{
+   position: absolute;
+   font-size: 25px;
+   top: 1500px;
+   left: 239px;
+   font-family: Georgia;
+   font-family:"Sawarabi Mincho", serif;
+ }
+
+ .topfont3{
+   position: absolute;
+   font-size: 16px;
+   top: 1539px;
+   left: 239px;
+   font-family: Georgia;
+   font-family:"Sawarabi Mincho", serif;
+ }
+
+ /*実線*/
+.box_s3 {
+  margin: 2em auto;
+  height: 40px;
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  left: -2%;
+ }
+
+
+
+.toukou{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 1600px;
+    left: 30px;
+    width: 100%;
+ }
+
+
+.tweettext1{
+  top: 90px;
+  left: -10px;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+}
+
+.tweettext2{
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+}
+
+
+.girlstalk{
+  position: relative;
+  top: 840px;
+  left: 16%;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+}
+
+.date{
+  position: relative;
+  top: 1400px;
+  left: 8%;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+}
+
+.firstmeeting{
+  position: relative;
+  top: 1962px;
+  left: 18%;
+  font-family: Georgia;
+  font-family:"Sawarabi Mincho", serif;
+}
+
+.imgimg {
+    margin: 20px;
+    width: 20%;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+    transition: .3s;
+  }
+  .imgimg:hover {
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+    transform: translateY(-25px);
+  }
+
+
+
+
+
+

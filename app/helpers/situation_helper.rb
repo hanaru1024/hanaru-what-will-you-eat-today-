@@ -1,0 +1,2 @@
+module SituationHelper
+end
